@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Lato:ital,wght@0,400;0,700;1,400&family=Pacifico&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap");
+
+@layer base {
+  html,
+  body {
+    font-family: "Lato", sans-serif;
+    @apply antialiased bg-gray-200;
+  }
+}
+.flag-select {
+  @apply !pb-2;
+}
+
+.flag-select button {
+  @apply h-14 border-2 border-gray-200 hover:border-[#5d3ebc];
+}
+
+.flag-select button > span span:nth-child(2) {
+  @apply text-sm;
+}
+
+.flag-select button > span span:nth-child(2) {
+  padding-left: 10px;
+}
